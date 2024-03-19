@@ -2,7 +2,7 @@ import * as S from "./styles";
 
 export function Contact() {
   return (
-    <S.ContactContainer>
+    <S.ContactContainer id="contact">
       <S.ContactInfos className="container">
         <h2>Contato</h2>
         <p>
