@@ -7,6 +7,16 @@ export const GalleryContainer = styled.div`
   background-color: #f2ffe9;
   background: url(${bg}) no-repeat;
   background-size: cover;
+
+  // @media (max-width: 689px) {
+  //   background: url(${bg}) repeat;
+  //   background-position: top 400px right 0;
+  // }
+
+  @media (max-width: 576px) {
+    background: url(${bg}) repeat;
+    background-position: top 500px right 0;
+  }
 `;
 
 export const Gallery = styled.div`
@@ -19,6 +29,7 @@ export const Gallery = styled.div`
   p {
     text-align: center;
     width: 70%;
+    padding: 0;
   }
 `;
 

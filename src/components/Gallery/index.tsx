@@ -7,7 +7,7 @@ import * as S from "./styles";
 
 export function Gallery() {
   return (
-    <S.GalleryContainer>
+    <S.GalleryContainer id="gallery">
       <S.Gallery className="container">
         <h2>Galeria</h2>
         <p>
