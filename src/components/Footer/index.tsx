@@ -6,7 +6,12 @@ const year = date.getFullYear();
 export function Footer() {
   return (
     <FooterContainer>
-      &copy; {year} Leticia Fernandes Gastronomia. Todos os direitos reservados.
+      <div className="container">
+        <span>
+          &copy; {year} Leticia Fernandes Gastronomia. Todos os direitos
+          reservados.
+        </span>
+      </div>
     </FooterContainer>
   );
 }

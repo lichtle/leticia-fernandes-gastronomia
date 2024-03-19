@@ -6,4 +6,14 @@ export const FooterContainer = styled.div`
   background-color: #557c55;
   color: #a6cf98;
   user-select: none;
+
+  @media (max-width: 576px) {
+    div {
+      max-width: 80%;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
 `;
