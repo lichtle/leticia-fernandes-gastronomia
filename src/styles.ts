@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: #F2FFE9;
     font-family: "Montserrat Alternates", sans-serif;
@@ -21,15 +25,14 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-size: 22px;
+    padding: 0 64px;
   }
-  
+
   .container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
   }
-
-  
 `;
 
 export default GlobalStyle;
