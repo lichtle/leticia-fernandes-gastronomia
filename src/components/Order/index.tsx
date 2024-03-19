@@ -9,7 +9,7 @@ import snack from "../../assets/snack.jpg";
 
 export function Order() {
   return (
-    <S.OrderContainer>
+    <S.OrderContainer id="order">
       <S.OrderDetails className="container">
         <h2>Faça uma encomenda comigo!</h2>
         <p>
@@ -24,7 +24,7 @@ export function Order() {
             <S.ItemDetails>
               <h3>Brownie (4 unidades)</h3>
               <p>
-                Feito com chocolate amargo 70%. Meinho super cremoso com
+                Feito com chocolate amargo 80%. Meinho super cremoso com
                 casquinha crocante por fora! Com nozes (coloque na observação se
                 não quiser nozes).
               </p>

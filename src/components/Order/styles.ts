@@ -7,6 +7,16 @@ export const OrderContainer = styled.div`
   background: url(${bg}) no-repeat;
   background-size: contain;
   background-color: #fa7070;
+
+  @media (max-width: 689pxpx) {
+    background: url(${bg}) repeat;
+    background-position: top 1096px right 0;
+  }
+
+  @media (max-width: 576px) {
+    background: url(${bg}) repeat;
+    background-position: top 96px right 0;
+  }
 `;
 
 export const OrderDetails = styled.div`
@@ -18,10 +28,23 @@ export const OrderDetails = styled.div`
   gap: 64px;
   color: #f2ffe9;
 
+  h2,
   p {
-    padding: 32px;
     text-align: center;
-    width: 70%;
+  }
+
+  p {
+    width: 80%;
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 48px;
+    }
+
+    p {
+      padding: 0;
+    }
   }
 `;
 
@@ -31,6 +54,10 @@ export const Menu = styled.ul`
   gap: 64px;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    gap: 32px;
+  }
 `;
 
 export const MenuItem = styled.div`
@@ -50,6 +77,15 @@ export const MenuItem = styled.div`
     object-fit: cover;
     border-radius: 8px 0 0 8px;
   }
+
+  @media (max-width: 576px) {
+    height: 400px;
+    width: 90%;
+
+    img {
+      width: 40%;
+    }
+  }
 `;
 
 export const ItemDetails = styled.div`
@@ -58,17 +94,6 @@ export const ItemDetails = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 16px;
-
-  button {
-    background-color: #a6cf98;
-    width: 40%;
-    width: 100%;
-    cursor: pointer;
-    padding: 8px;
-    border: none;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 700;
-  }
 
   h3 {
     font-weight: 500;
@@ -81,5 +106,28 @@ export const ItemDetails = styled.div`
     width: 100%;
     text-align: left;
     padding: 0;
+  }
+
+  button {
+    background-color: #a6cf98;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+  }
+
+  @media (max-width: 576px) {
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+    }
   }
 `;
