@@ -7,6 +7,7 @@ export const HeroContainer = styled.div`
 
 export const Introduction = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 
@@ -25,6 +26,43 @@ export const Introduction = styled.div`
     p {
       font-size: 28px;
       text-align: justify;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+
+    div {
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    gap: 64px;
+
+    img {
+      width: 60%;
+    }
+
+    div {
+      width: 80%;
+      gap: 64px;
+
+      h1,
+      p {
+        text-align: center;
+      }
+
+      p {
+        font-size: 20px;
+      }
     }
   }
 `;
