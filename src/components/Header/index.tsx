@@ -13,7 +13,7 @@ export function Header() {
         </label>
         <List className="menu__box">
           <li>
-            <a className="menu__item" href="#order">
+            <a className="menu__item" href="#menu">
               Encomendas
             </a>
           </li>
