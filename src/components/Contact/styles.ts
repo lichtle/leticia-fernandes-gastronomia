@@ -86,32 +86,43 @@ export const InputContainer = styled.div`
   gap: 8px;
 `;
 
-export const LinksContainer = styled.nav`
+export const LinksContainer = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 32px;
-`;
-
-export const Link = styled.a`
-  color: #000;
-  font-size: 28px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   gap: 16px;
-  transition: 0.3s ease-in-out;
 
-  &:hover {
-    &:nth-child(odd) {
-      color: #557c55;
+  a {
+    display: inline-block;
+    position: relative;
+    font-size: 28px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    color: #000;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      background: none repeat scroll 0 0 transparent;
+      height: 3px;
+      width: 0;
+      background: #fa7070;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
     }
 
-    &:nth-child(even) {
-      color: #fa7070;
+    &:hover::after {
+      width: 100%;
+      left: 0;
     }
-  }
 
-  @media (max-width: 576px) {
-    font-size: 22px;
+    i {
+      margin-right: 16px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 22px;
+    }
   }
 `;

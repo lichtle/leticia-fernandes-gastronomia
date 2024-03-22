@@ -30,35 +30,43 @@ export function Contact() {
             <button type="submit">Enviar</button>
           </S.FormContainer>
           <S.LinksContainer>
-            <S.Link target="_blank" href="https://wa.me/5535987044117" title="">
-              <i className="fa-brands fa-whatsapp" />
-              WhatsApp
-            </S.Link>
-            <S.Link
-              target="_blank"
-              href="mail:leticia.negreiros@outlook.com"
-              title=""
-            >
-              <i className="fa-regular fa-envelope" />
-              E-mail
-            </S.Link>
-            <S.Link
-              target="_blank"
-              href="https://www.linkedin.com/in/leticianegreiros/"
-              title=""
-            >
-              <i className="fa-brands fa-linkedin" />
-              LinkedIn
-              <a></a>
-            </S.Link>
-            <S.Link
-              target="_blank"
-              href="https://www.instagram.com/frontendkitty/"
-              title=""
-            >
-              <i className="fa-brands fa-instagram" />
-              Instagram
-            </S.Link>
+            <li>
+              <a target="_blank" href="https://wa.me/5535987044117" title="">
+                <i className="fa-brands fa-whatsapp" />
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/leticianegreiros/"
+                title=""
+              >
+                <i className="fa-brands fa-linkedin" />
+                LinkedIn
+                <a></a>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/frontendkitty/"
+                title=""
+              >
+                <i className="fa-brands fa-instagram" />
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="mail:leticia.negreiros@outlook.com"
+                title=""
+              >
+                <i className="fa-regular fa-envelope" />
+                E-mail
+              </a>
+            </li>
           </S.LinksContainer>
         </div>
       </S.ContactInfos>
