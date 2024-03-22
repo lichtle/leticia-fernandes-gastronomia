@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import bg from "../../assets/bg2.png";
 
-export const OrderContainer = styled.div`
+export const MenuContainer = styled.div`
   padding: 64px 0;
   background: url(${bg}) no-repeat;
   background-size: contain;
@@ -19,7 +19,7 @@ export const OrderContainer = styled.div`
   }
 `;
 
-export const OrderDetails = styled.div`
+export const MenuDetails = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -110,6 +110,7 @@ export const ItemDetails = styled.div`
 
   button {
     background-color: #a6cf98;
+    color: #557c55;
     width: 100%;
     cursor: pointer;
     padding: 8px;

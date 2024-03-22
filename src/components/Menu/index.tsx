@@ -7,10 +7,10 @@ import easterEgg from "../../assets/easter-egg.jpg";
 import gnocchi from "../../assets/gnocchi.jpg";
 import snack from "../../assets/snack.jpg";
 
-export function Order() {
+export function Menu() {
   return (
-    <S.OrderContainer id="order">
-      <S.OrderDetails className="container">
+    <S.MenuContainer id="menu">
+      <S.MenuDetails className="container">
         <h2>Faça uma encomenda comigo!</h2>
         <p>
           Escolha um dos itens disponíveis do cardápio abaixo, preencha seus
@@ -87,7 +87,7 @@ export function Order() {
             </S.ItemDetails>
           </S.MenuItem>
         </S.Menu>
-      </S.OrderDetails>
-    </S.OrderContainer>
+      </S.MenuDetails>
+    </S.MenuContainer>
   );
 }
