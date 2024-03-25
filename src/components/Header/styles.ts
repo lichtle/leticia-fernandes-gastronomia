@@ -104,14 +104,13 @@ export const HeaderContainer = styled.div`
 
 export const Logo = styled.img`
   width: 300px;
-  user-select: none;
 
   @media (max-width: 576px) {
     width: 250px;
   }
 `;
 
-export const List = styled.div`
+export const List = styled.ul`
   display: flex;
   align-items: center;
   gap: 64px;
@@ -122,6 +121,24 @@ export const List = styled.div`
     font-size: 28px;
     padding-bottom: 8px;
     color: #000;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      display: block;
+      background: none repeat scroll 0 0 transparent;
+      height: 3px;
+      width: 0;
+      background: #fa7070;
+      transition: width 0.3s ease 0s, right 0.3s ease 0s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      right: 0;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -130,23 +147,5 @@ export const List = styled.div`
     a {
       font-size: 22px;
     }
-  }
-
-  a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    display: block;
-    background: none repeat scroll 0 0 transparent;
-    height: 3px;
-    width: 0;
-    background: #fa7070;
-    transition: width 0.3s ease 0s, right 0.3s ease 0s;
-  }
-
-  a:hover::after {
-    width: 100%;
-    right: 0;
   }
 `;
