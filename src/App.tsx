@@ -1,21 +1,14 @@
 import GlobalStyle from "./styles";
 
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Gallery } from "./components/Gallery";
-import { Menu } from "./components/Menu";
-import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+
+import Paths from "./pages/routes";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <Hero />
-      <Gallery />
-      <Menu />
-      <Contact />
+      <Paths />
       <Footer />
     </>
   );
