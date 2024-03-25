@@ -1,39 +1,44 @@
-import { HeaderContainer, Logo, List } from "./styles";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
+import * as S from "./styles";
 
 import logo from "../../assets/logo.png";
 
 export function Header() {
   return (
-    <HeaderContainer className="container">
-      <Logo src={logo} alt="Logo" />
+    <S.HeaderContainer className="container">
+      <Link to="/">
+        <S.Logo src={logo} alt="Logo" />
+      </Link>
       <nav className="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label className="menu__btn" htmlFor="menu__toggle">
           <span></span>
         </label>
-        <List className="menu__box">
+        <S.List className="menu__box">
           <li>
-            <a className="menu__item" href="#menu">
+            <HashLink to="#menu" className="menu__item">
               Encomendas
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a className="menu__item" href="#gallery">
+            <HashLink to="#gallery" className="menu__item">
               Galeria
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a className="menu__item" href="">
+            <Link to="/receitas" className="menu__item">
               Receitas
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="menu__item" href="#contact">
+            <HashLink to="#contact" className="menu__item">
               Contato
-            </a>
+            </HashLink>
           </li>
-        </List>
+        </S.List>
       </nav>
-    </HeaderContainer>
+    </S.HeaderContainer>
   );
 }
