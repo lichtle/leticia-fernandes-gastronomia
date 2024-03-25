@@ -51,12 +51,14 @@ export const Cards = styled.ul`
 `;
 
 export const Card = styled.li`
-  background-color: #557c55;
-  color: #f2ffe9;
+  img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
 
-  h3 {
-    font-weight: 500;
-    text-align: center;
-    padding: 8px 0;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 `;
