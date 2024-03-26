@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0 64px;
   }
 
+  input, textarea {
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+
   .container {
     max-width: 1280px;
     width: 100%;

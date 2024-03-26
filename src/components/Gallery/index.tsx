@@ -1,13 +1,22 @@
 // Icons by Handicon at https://www.flaticon.com/free-icon/next_2989988 and https://www.flaticon.com/free-icon/back_2989985
 
+import { useState, useEffect } from "react";
+
+import { Plates, PlatesType } from "../../utils/platelist";
+import { Plate } from "../Plate";
+
 import previous from "../../assets/previous.png";
 import next from "../../assets/next.png";
 
 import * as S from "./styles";
-import { plates } from "../../utils/platelist";
-import { useState } from "react";
 
 export function Gallery() {
+  const [plates, setPlates] = useState<PlatesType[]>([]);
+
+  useEffect(() => {
+    setPlates(Plates);
+  }, []);
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextSlide = () => {
@@ -40,10 +49,10 @@ export function Gallery() {
           <S.Cards>
             {plates
               .slice(currentImageIndex, currentImageIndex + 4)
-              .map((plate, index) => {
+              .map((item, index) => {
                 return (
                   <S.Card key={index}>
-                    <img src={plate.img} alt={plate.title} />
+                    <Plate plate={item}/>
                   </S.Card>
                 );
               })}
