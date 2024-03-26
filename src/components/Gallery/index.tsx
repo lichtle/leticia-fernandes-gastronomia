@@ -4,7 +4,7 @@ import previous from "../../assets/previous.png";
 import next from "../../assets/next.png";
 
 import * as S from "./styles";
-import { plateList } from "../../utils/platelist";
+import { plates } from "../../utils/platelist";
 import { useState } from "react";
 
 export function Gallery() {
@@ -12,12 +12,12 @@ export function Gallery() {
 
   const nextSlide = () => {
     const newIndex = currentImageIndex + 4;
-    setCurrentImageIndex(newIndex >= plateList.length ? 0 : newIndex);
+    setCurrentImageIndex(newIndex >= plates.length ? 0 : newIndex);
   };
 
   const prevSlide = () => {
     const newIndex = currentImageIndex - 4;
-    setCurrentImageIndex(newIndex < 0 ? plateList.length - 4 : newIndex);
+    setCurrentImageIndex(newIndex < 0 ? plates.length - 4 : newIndex);
   };
 
   return (
@@ -38,7 +38,7 @@ export function Gallery() {
             onClick={prevSlide}
           />
           <S.Cards>
-            {plateList
+            {plates
               .slice(currentImageIndex, currentImageIndex + 4)
               .map((plate, index) => {
                 return (

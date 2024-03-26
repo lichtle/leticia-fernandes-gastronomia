@@ -7,46 +7,61 @@ import spaghetti from "../assets/Gallery/spaghetti.png";
 import malloreddus from "../assets/Gallery/malloreddus.png";
 import salade from "../assets/Gallery/salade.png";
 
-export const plateList = [
+export type PlatesType = {
+  id: number;
+  img: string;
+  title: string;
+  description: string;
+};
+
+export const plates: PlatesType[] = [
   {
+    id: 1,
     img: spaghetti,
     title: "Spaghetti alla Carbonara",
     description:
       "Salada de alface e radicchio (uma espécie de couve-de-bruxelas roxa), triângulos empanados de queijo de cabra e molho feito com mostarda Dijon, vinagre, creme de leite, manteiga clarificada e azeite.",
   },
   {
+    id: 2,
     img: malloreddus,
     title: "Malloreddus alla campidanese",
     description: "",
   },
   {
+    id: 3,
     img: salade,
     title: "Salade au chèvre chaud",
     description: "",
   },
   {
+    id: 4,
     img: poire,
     title: "Poire belle Hélène",
     description: "",
   },
   {
+    id: 5,
     img: chinghiale,
     title: "Cinghiale in umido",
     description: "Ensopado de javali com batatas bolinha e torradas.",
   },
   {
+    id: 6,
     img: madeleines,
     title: "Madeleines",
     description:
       "&quot;Bolinhos&quot; esponjosos típicos da França. São assados em formas com o formato de concha e podem ter raspas de limão adicionadas à massa.",
   },
   {
+    id: 7,
     img: dryAged,
     title: "Dry Aged",
     description:
       "Dry Age é um processo de maturação à seco controlado em que a carne é deixada para envelhecer por um determinado período de tempo que pode chegar a 1 ano! Tal processo confere ao corte de carne (que pode ser um filé mignon, por exemplo) aromas diversos (a depender do tempo de maturação) e textura extremamente macia. Nessa foto o corte usado ele aparece acompanhado de uma musseline de mandioquinha e chips de batata.",
   },
   {
+    id: 8,
     img: canard,
     title: "Canard à l'orange",
     description: "",
